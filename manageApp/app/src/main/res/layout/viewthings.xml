@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewThings">
+
+
+    <TextView
+        android:id="@+id/viewThinsTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/black"
+        android:text=" 물품보기"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="66dp"
+        android:layout_height="45dp"
+        android:onClick="backBtn"
+        android:src="@drawable/backbtnaction"
+        android:background="@drawable/backbtnaction"
+        app:layout_constraintEnd_toEndOf="@+id/viewThinsTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
