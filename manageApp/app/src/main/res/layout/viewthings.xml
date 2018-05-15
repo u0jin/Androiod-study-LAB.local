@@ -5,28 +5,149 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".viewThings">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/black"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewThinsTextView"
+                android:layout_width="323dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/black"
+                android:text=" 물품 보기"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="66dp"
+                android:layout_height="45dp"
+                android:background="@drawable/backbtnaction"
+                android:onClick="backBtn"
+                android:src="@drawable/backbtnaction"
+                app:layout_constraintEnd_toEndOf="@+id/viewThinsTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dailySuppliesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dailySuppliesBtn"
+                android:text="생활 용품"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="96dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pcSuppliesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PC 용품"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="231dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/officeSuppliesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사무 용품"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="381dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bookBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도서"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="158dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/furnitureSuppliesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가구"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="311dp" />
 
 
-    <TextView
-        android:id="@+id/viewThinsTextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/black"
-        android:text=" 물품보기"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/backBtn"
-        android:layout_width="66dp"
-        android:layout_height="45dp"
-        android:onClick="backBtn"
-        android:src="@drawable/backbtnaction"
-        android:background="@drawable/backbtnaction"
-        app:layout_constraintEnd_toEndOf="@+id/viewThinsTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/breakfastTextView"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/foddSuppliesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="식품 / 음료"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

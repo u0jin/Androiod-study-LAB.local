@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cosmos"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,14 +30,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="viewThingsBtn"
-            android:text="물품보기" />
+            android:text="물품 보기" />
 
         <Button
-            android:id="@+id/seachThingsBtn"
+            android:id="@+id/searchThingsBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="searchThingsBtn"
-            android:text="물품검색" />
+            android:text="물품 검색" />
 
         <Button
             android:id="@+id/enrollThingsBtn"
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:onClick="enrollThingsBtn"
-            android:text="물품등록" />
+            android:text="물품 등록" />
 
     </LinearLayout>
 

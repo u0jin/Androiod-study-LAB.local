@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewThings"></activity>
+        <activity android:name=".viewThings"/>
+        <activity android:name=".enrollThings"/>
+        <activity android:name=".searchThings"/>
+        <activity android:name=".detailthings"/>
     </application>
 
 </manifest>
